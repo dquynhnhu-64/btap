@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Version 1 - Modern Tech</title>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Định nghĩa biến màu từ Adobe Color - Version 1 */
+        :root {
+            --primary-color: #0052CC;    /* Blue primary */
+            --secondary-color: #0747A6;  /* Deep Navy Header/Footer */
+            --accent-color: #FFAB00;     /* Warm Amber Accent */
+            --light-bg-color: #F4F5F7;   /* Slate light background */
+            --text-color: #172B4D;       /* Dark contrast text */
+            --white: #FFFFFF;
+        }
+
+        body {
+            background-color: var(--light-bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .primary-bg { background-color: var(--primary-color) !important; }
+        .secondary-bg { background-color: var(--secondary-color) !important; }
+        .accent-bg { background-color: var(--accent-color) !important; color: #172B4D !important; }
+
+        .text-primary-color { color: var(--primary-color) !important; }
+        .text-secondary-color { color: var(--secondary-color) !important; }
+        
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 12px rgba(9, 30, 66, 0.08);
+            border-radius: 12px;
+        }
+
+        header, footer {
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5" style="max-width: 800px;">
+        <!-- Header -->
+        <header class="text-center mb-4 p-5 secondary-bg text-white">
+            <h1 class="fw-bold">Trello Weekly Newsletter</h1>
+            <p class="mb-0 text-light opacity-75">Nơi bắt đầu những giải pháp quản lý công việc hiệu quả</p>
+        </header>
+
+        <!-- Intro Section -->
+        <section class="card mb-4">
+            <div class="card-body p-4">
+                <h2 class="card-title text-primary-color fw-bold h4 mb-3">
+                    Chào mừng bạn đến với bản tin nâng cao năng suất!
+                </h2>
+                <p class="card-text text-secondary mb-4">
+                    Trong số này, chúng tôi mang đến những phương pháp phối màu UI/UX giúp tăng tính tập trung và tối ưu trải nghiệm giao diện người dùng trên ứng dụng của bạn.
+                </p>
+                <a href="#" class="btn btn-primary-custom">Khám phá ngay</a>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 primary-bg text-white">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h5 fw-bold mb-2">Quy tắc phối màu 60-30-10</h3>
+                        <p class="card-text text-white-50">
+                            Áp dụng 60% màu chủ đạo, 30% màu thứ cấp và 10% màu nhấn để tạo sự cân bằng hoàn hảo cho giao diện.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 accent-bg">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h5 fw-bold mb-2">Độ tương phản (Contrast)</h3>
+                        <p class="card-text opacity-75">
+                            Đảm bảo tỷ lệ tương phản chữ đạt chuẩn WCAG AAA giúp người dùng dễ đọc ở mọi điều kiện ánh sáng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center p-4 secondary-bg text-white">
+            <p class="mb-0 small">&copy; 2026 Trello & CodeGym. Tất cả quyền được bảo lưu.</p>
+        </footer>
+    </div>
+</body>
+</html>
